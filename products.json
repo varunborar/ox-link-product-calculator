@@ -1,17 +1,1714 @@
 [
-  {"id": 1, "description": "CAT5E 24AWG", "packing": "305 MTR. COIL", "ratio": 81.71, "cal": 5057.14, "percent_change": 100, "net_rate": 5310.00},
-  {"id": 2, "description": "CAT 6 UTP (23 AWG) MESH COIL", "packing": "305 MTR. COIL", "ratio": 81.20, "cal": 5933.33, "percent_change": 100, "net_rate": 6230.00},
-  {"id": 3, "description": "CAT 6 UTP (23 AWG) PLASTIC REEL", "packing": "305 MTR. COIL", "ratio": 79.66, "cal": 6047.62, "percent_change": 100, "net_rate": 6350.00},
-  {"id": 4, "description": "CAT 6 UTP (23 AWG) MESH COIL PE JACKET", "packing": "305 MTR. COIL", "ratio": 81.77, "cal": 5895.24, "percent_change": 100, "net_rate": 6190.00},
-  {"id": 5, "description": "CAT 6 UTP (23 AWG) PLASTIC REEL PE ACKET", "packing": "305 MTR. COIL", "ratio": 80.21, "cal": 6009.52, "percent_change": 100, "net_rate": 6310.00},
-  {"id": 6, "description": "CAT 6 UTP (24 AWG) MESH COIL", "packing": "305 MTR. COIL", "ratio": 79.39, "cal": 5152.38, "percent_change": 100, "net_rate": 5410.00},
-  {"id": 7, "description": "CAT 6 UTP (24 AWG) PLASTIC REEL", "packing": "305 MTR. COIL", "ratio": 77.16, "cal": 5304.76, "percent_change": 100, "net_rate": 5570.00},
-  {"id": 8, "description": "CAT 6 SFTP (24 AWG)", "packing": "305 MTR. COIL", "ratio": 72.26, "cal": 6742.86, "percent_change": 100, "net_rate": 7080.00},
-  {"id": 9, "description": "CAT 6 A F(UTP)", "packing": "305 MTR. COIL", "ratio": 69.50, "cal": 9800.00, "percent_change": 100, "net_rate": 10290.00},
-  {"id": 10, "description": "CAT 6 A SFTP PE SHEATHING", "packing": "305 MTR. COIL", "ratio": 71.87, "cal": 10142.86, "percent_change": 100, "net_rate": 10650.00},
-  {"id": 11, "description": "CAT 6 A SFTP PVC SHEATHING", "packing": "305 MTR. COIL", "ratio": 69.33, "cal": 10514.29, "percent_change": 100, "net_rate": 11040.00},
-  {"id": 12, "description": "CAT 7 (23 AWG) ATC", "packing": "305 MTR. COIL", "ratio": 72.07, "cal": 21285.71, "percent_change": 100, "net_rate": 22350.00},
-  {"id": 13, "description": "CAT 7 (23 AWG) ALLOY", "packing": "305 MTR. COIL", "ratio": 64.97, "cal": 16323.81, "percent_change": 100, "net_rate": 17140.00},
-  {"id": 14, "description": "CAT 7 (23 AWG) ATC LSZH Jacket", "packing": "305 MTR. COIL", "ratio": 68.97, "cal": 22238.10, "percent_change": 100, "net_rate": 23350.00},
-  {"id": 15, "description": "CAT 7 (23 AWG) ALLOY LSZH Jacket", "packing": "305 MTR. COIL", "ratio": 61.42, "cal": 17276.19, "percent_change": 100, "net_rate": 18140.00}
+  {
+    "description": "CAT5E 24AWG MESH COIL",
+    "id": "0",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "14.65",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "3.64",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.148",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "10.93",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "275"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT5E 24AWG PLASTIC REEL",
+    "id": "1",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "14.65",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "3.64",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.148",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "10.93",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "650"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 UTP (23 AWG) MESH COIL",
+    "id": "2",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "17.25",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "4.25",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.0867",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "3.182",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "14.14",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "275"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 UTP (23 AWG) PLASTIC REEL",
+    "id": "3",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "17.25",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "4.25",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.0867",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "3.182",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "14.14",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "650"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 UTP (23 AWG) MESH COIL PE JACKET",
+    "id": "4",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "17.25",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "4.25",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.0867",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "12.65",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "3.182",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "275"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 UTP (23 AWG) PLASTIC REEL PE JACKET",
+    "id": "5",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "17.25",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "4.25",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.0867",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "12.65",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "3.182",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "650"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 UTP (24 AWG) MESH COIL",
+    "id": "6",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "14.65",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "3.8573",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.0787",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "3.53",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "15.33",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "275"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 UTP (24 AWG) PLASTIC REEL",
+    "id": "7",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "14.65",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "3.8573",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.0787",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "3.53",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "15.33",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "650"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 SFTP (24 AWG)",
+    "id": "8",
+    "margin": "5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "2.63",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "4.23",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "14.91",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "1.037",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "4.06",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.083",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "3.6",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0.861",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "18.66",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.116",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "225"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 A F(UTP)",
+    "id": "9",
+    "margin": "22",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "4.99",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "18.61",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "1.06",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "5.76",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.1175",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "5.06",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0.96",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "22.11",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "885"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 A SFTP PE SHEATHING",
+    "id": "10",
+    "margin": "24",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "1.96",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "4.99",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "18.61",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "1.06",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "5.76",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.1175",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "12.65",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "5.06",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0.96",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "885"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 6 A SFTP PVC SHEATHING",
+    "id": "11",
+    "margin": "24",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "1.96",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "4.99",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "18.61",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "1.06",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "5.76",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.1175",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "5.06",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0.96",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "20.9",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "855"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 7 (23 AWG) ATC",
+    "id": "12",
+    "margin": "46.5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "7.415",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "8.13",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "19.04",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "4.723",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0.08",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "1.396",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.02",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "21.75",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "885"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 7 (23 AWG) ALLOY",
+    "id": "13",
+    "margin": "46.5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "3.46",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "7.415",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "19.04",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "4.723",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0.08",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "1.396",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.02",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "21.75",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "885"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 7 (23 AWG) ATC LSZH Jacket",
+    "id": "14",
+    "margin": "46.5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "7.415",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "8.13",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "19.04",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "4.723",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0.08",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "21.75",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "1.396",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.02",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "885"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  },
+  {
+    "description": "CAT 7 (23 AWG) ALLOY LSZH Jacket",
+    "id": "15",
+    "margin": "46.5",
+    "packing": "305 MTR. COIL",
+    "packingSize": {
+      "multiplier": "0.305",
+      "unit": "m"
+    },
+    "rawMaterials": {
+      "alloyBraiding": {
+        "usage": "3.46",
+        "unit": "kg"
+      },
+      "almyler": {
+        "usage": "7.415",
+        "unit": "kg"
+      },
+      "atcBraiding": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "copper": {
+        "usage": "19.04",
+        "unit": "kg"
+      },
+      "drainWire": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "foaming": {
+        "usage": "4.723",
+        "unit": "kg"
+      },
+      "ldpe": {
+        "usage": "0.08",
+        "unit": "kg"
+      },
+      "lszhShakun": {
+        "usage": "21.75",
+        "unit": "kg"
+      },
+      "peInsulationDow": {
+        "usage": "1.396",
+        "unit": "kg"
+      },
+      "peInsulationHanwa": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peMb": {
+        "usage": "0.02",
+        "unit": "kg"
+      },
+      "peSheathing": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "peStarBorouge": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "polyster": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "printing": {
+        "usage": "1",
+        "unit": "kg"
+      },
+      "pvcKlj": {
+        "usage": "0",
+        "unit": "kg"
+      },
+      "ripCord": {
+        "usage": "0.15",
+        "unit": "kg"
+      }
+    },
+    "wastage": {
+      "alloyBraiding": "1",
+      "almyler": "2.5",
+      "atcBraiding": "1",
+      "copper": "1",
+      "drainWire": "1",
+      "foaming": "2.5",
+      "ldpe": "2.5",
+      "lszhShakun": "2.5",
+      "peInsulationDow": "2.5",
+      "peInsulationHanwa": "2.5",
+      "peMb": "2.5",
+      "peSheathing": "2.5",
+      "peStarBorouge": "2.5",
+      "polyster": "2.5",
+      "printing": "2.5",
+      "pvcKlj": "2.5",
+      "ripCord": "2.5"
+    },
+    "additonalCosting": {
+      "packing": "885"
+    },
+    "manufacturingCost": {
+      "alloyBraiding": "50",
+      "copper": "50",
+      "drainWire": "50"
+    }
+  }
 ]

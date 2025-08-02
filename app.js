@@ -10,17 +10,82 @@ function calculateProductRate(copperRate, netRate, ratio) {
   return result.toFixed(2);
 }
 
-function renderTable(copperRate) {
+/**
+ * Calculate the final product rate using raw material usage, wastage, additional costing, and margin.
+ * @param {object} product - The product object from products.json
+ * @param {object} rawMaterialRates - Array of raw material rates from RawMaterialRates.json
+ * @param {object} [variables] - Optional object mapping raw material ids to override rates
+ * @returns {number} - The final calculated product rate
+ */
+function calculateProductRateV2(product, rawMaterialRates, variables = {}) {
+  if (!product.rawMaterials) return null;
+  let materialCost = 0;
+  // 1. Calculate cost for each raw material (usage * rate)
+  for (const [matId, matInfo] of Object.entries(product.rawMaterials)) {
+    let rate = variables.hasOwnProperty(matId)
+      ? parseFloat(variables[matId])
+      : (rawMaterialRates.find(r => r.id === matId)?.rate ?? 0);
+    let usage = parseFloat(matInfo.usage);
+    let wastagePercent = product.wastage && product.wastage[matId] ? parseFloat(product.wastage[matId]) : 0;
+    let costWithWastage = usage * rate * (1 + wastagePercent / 100);
+    // if (usage > 0) {
+    //   console.log(`productName: ${product.description} matId: ${matId} cost: ${rate*usage} wastagePercent: ${wastagePercent} wastageCos: ${costWithWastage-(usage*rate)}`);
+    // }
+    materialCost += costWithWastage;
+  }
+  // 2. Add additional costing (sum all values in additonalCosting)
+  let additionalCost = 0;
+  if (product.additonalCosting) {
+    for (const val of Object.values(product.additonalCosting)) {
+      additionalCost += parseFloat(val);
+    }
+  }
+  // 3. Calculate manufacturing cost based on per-material manufacturing cost
+  let manufacturingCost = 0;
+  if (product.manufacturingCost) {
+    for (const [matId, matInfo] of Object.entries(product.rawMaterials)) {
+      if (product.manufacturingCost.hasOwnProperty(matId)) {
+        let usage = parseFloat(matInfo.usage);
+        let perUnitCost = parseFloat(product.manufacturingCost[matId]);
+        manufacturingCost += usage * perUnitCost;
+      }
+    }
+  }
+  // 4. Calculate total cost
+  let totalCost = materialCost + additionalCost + manufacturingCost;
+  let multiplier = product.packingSize && product.packingSize.multiplier ? parseFloat(product.packingSize.multiplier) : 1;
+  let packageCost = totalCost * multiplier;
+  let marginPercent = product.margin ? parseFloat(product.margin) : 0;
+  let finalCost = packageCost / (1 - (marginPercent / 100));
+  // console.log(`productName: ${product.description} materialCost: ${materialCost} additionalCost: ${additionalCost} manufacturingCost: ${manufacturingCost} totalCost: ${totalCost} packageCost: ${packageCost} marginPercent: ${marginPercent} finalCost: ${finalCost}`);
+  return Math.round(finalCost);
+}
+
+let rawMaterialRatesCache = null;
+
+async function renderTable(copperRate) {
+  // Fetch and cache raw material rates
+  if (!rawMaterialRatesCache) {
+    rawMaterialRatesCache = await fetch('RawMaterialRates.json').then(res => res.json());
+  }
   const tbody = document.querySelector('#products_table tbody');
   tbody.innerHTML = '';
+  // Prepare variables object with copper override
+  const variables = { copper: copperRate };
   products.forEach((product, idx) => {
-    const price = calculateProductRate(copperRate, product.net_rate, product.ratio);
+    let price = '';
+    if (product.rawMaterials) {
+      price = calculateProductRateV2(product, rawMaterialRatesCache, variables);
+    } else if (product.net_rate && product.ratio) {
+      // fallback for legacy products
+      price = calculateProductRate(copperRate, product.net_rate, product.ratio);
+    }
     const row = document.createElement('tr');
     row.innerHTML = `
       <td>${idx + 1}</td>
       <td class="left-align">${product.description}</td>
       <td>${product.packing}</td>
-      <td>${price ? '₹' + price : '-'}</td>
+      <td>${price ? '₹' + Number(price).toFixed(2) : '-'}</td>
     `;
     tbody.appendChild(row);
   });
