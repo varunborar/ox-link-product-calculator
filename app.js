@@ -31,6 +31,12 @@ function getQueryParam(name) {
   return urlParams.get(name);
 }
 
+function setQueryParam(name, value) {
+  const url = new URL(window.location);
+  url.searchParams.set(name, value);
+  window.history.replaceState({}, '', url);
+}
+
 // Fetch products.json and initialize
 document.addEventListener('DOMContentLoaded', function() {
   fetch('products.json')
@@ -43,9 +49,23 @@ document.addEventListener('DOMContentLoaded', function() {
       if (rateParam) {
         copperInput.value = rateParam;
         // Materialize label fix
-        if (M && M.updateTextFields) M.updateTextFields();
+        if (window.M && M.updateTextFields) M.updateTextFields();
       }
       renderTable(copperInput.value);
+
+      // Prevent form submission and update query param on Enter
+      if (copperInput.form) {
+        copperInput.form.addEventListener('submit', function(e) {
+          e.preventDefault();
+        });
+      }
+      copperInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          setQueryParam('rate', this.value);
+          renderTable(this.value);
+        }
+      });
       copperInput.addEventListener('input', function() {
         renderTable(this.value);
       });
