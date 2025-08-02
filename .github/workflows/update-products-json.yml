@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GIT_PAT_WRITE }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -34,8 +36,11 @@ jobs:
           python scripts/convert_products.py to_json products.csv products.json
 
       - name: Commit and push changes
+        env:
+          GIT_PAT_WRITE: ${{ secrets.GIT_PAT_WRITE }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add products.json
-          git diff --cached --quiet || (git commit -m "Update products.json from Google Sheets" && git push)
+          git diff --cached --quiet || (git commit -m "Update products.json from Google Sheets" && \
+            git push "https://x-access-token:${GIT_PAT_WRITE}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }})
