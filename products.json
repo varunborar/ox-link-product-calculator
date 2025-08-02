@@ -1578,14 +1578,14 @@
     },
     "wastage": {
       "alloyBraiding": "1",
-      "almyler": "2.5",
+      "almyler": "1",
       "atcBraiding": "1",
       "copper": "1",
       "drainWire": "1",
-      "foaming": "2.5",
-      "ldpe": "2.5",
-      "lszhShakun": "2.5",
-      "peInsulationDow": "2.5",
+      "foaming": "5",
+      "ldpe": "3",
+      "lszhShakun": "1",
+      "peInsulationDow": "3",
       "peInsulationHanwa": "2.5",
       "peMb": "2.5",
       "peSheathing": "2.5",
@@ -1593,7 +1593,7 @@
       "polyster": "2.5",
       "printing": "2.5",
       "pvcKlj": "2.5",
-      "ripCord": "2.5"
+      "ripCord": "1"
     },
     "additonalCosting": {
       "packing": "885"
@@ -1685,14 +1685,14 @@
     },
     "wastage": {
       "alloyBraiding": "1",
-      "almyler": "2.5",
+      "almyler": "1",
       "atcBraiding": "1",
       "copper": "1",
       "drainWire": "1",
-      "foaming": "2.5",
-      "ldpe": "2.5",
-      "lszhShakun": "2.5",
-      "peInsulationDow": "2.5",
+      "foaming": "5",
+      "ldpe": "3",
+      "lszhShakun": "1",
+      "peInsulationDow": "3",
       "peInsulationHanwa": "2.5",
       "peMb": "2.5",
       "peSheathing": "2.5",
@@ -1700,7 +1700,7 @@
       "polyster": "2.5",
       "printing": "2.5",
       "pvcKlj": "2.5",
-      "ripCord": "2.5"
+      "ripCord": "1"
     },
     "additonalCosting": {
       "packing": "885"
