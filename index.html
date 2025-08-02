@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OXLINK Copper Rate Calculator</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./public/OXLINK Logo.png">
+  <!-- Materialize CSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="center-align">
+      <img src="./public/OXLINK Logo.png" alt="OXLINK Logo" class="logo responsive-img" style="max-width: 250px; margin-top: 10px;"/>
+      <h4>Copper Rate Product Calculator</h4>
+    </div>
+    <div class="row">
+      <form class="col s12">
+        <div class="input-field col s12 m6 offset-m3">
+          <input id="copper_rate" type="number" min="0" step="0.01" class="validate">
+          <label for="copper_rate">Enter Copper Rate (per kg)</label>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <table class="highlight responsive-table" id="products_table">
+          <thead>
+            <tr>
+              <th>S. No.</th>
+              <th class="left-align">Product</th>
+              <th>Packing</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Product rows will be inserted here by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
