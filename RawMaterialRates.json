@@ -1,87 +1,87 @@
 [
-    {
-        "id": "copper",
-        "name": "Copper",
-        "rate": 925
-    },
-    {
-        "id": "peInsulationHanwa",
-        "name": "PE Insulation Hanwa",
-        "rate": 130
-    },
-    {
-        "id": "peInsulationDow",
-        "name": "PE Insulation Dow",
-        "rate": 122
-    },
-    {
-        "id": "peMb",
-        "name": "PE MB",
-        "rate": 250
-    },
-    {
-        "id": "peStarBorouge",
-        "name": "PE Star Borouge",
-        "rate": 108
-    },
-    {
-        "id": "pvcKlj",
-        "name": "PVC KLJ",
-        "rate": 89
-    },
-    {
-        "id": "ripCord",
-        "name": "Rip Cord",
-        "rate": 250
-    },
-    {
-        "id": "polyster",
-        "name": "Polyster",
-        "rate": 150
-    },
-    {
-        "id": "almyler",
-        "name": "Almyler",
-        "rate": 450
-    },
-    {
-        "id": "drainWire",
-        "name": "Drain Wire",
-        "rate": 1200
-    },
-    {
-        "id": "ldpe",
-        "name": "LDPE",
-        "rate": 224
-    },
-    {
-        "id": "foaming",
-        "name": "Foaming",
-        "rate": 207
-    },
-    {
-        "id": "atcBraiding",
-        "name": "ATC Braiding",
-        "rate": 1200
-    },
-    {
-        "id": "alloyBraiding",
-        "name": "Alloy Braiding",
-        "rate": 400
-    },
-    {
-        "id": "printing",
-        "name": "Printing",
-        "rate": 80
-    },
-    {
-        "id": "peSheathing",
-        "name": "PE Sheathing",
-        "rate": 115
-    },
-    {
-        "id": "lszhShakun",
-        "name": "LSZH Shakun",
-        "rate": 165
-    }
+  {
+    "id": "copper",
+    "name": "Copper",
+    "rate": 925.0
+  },
+  {
+    "id": "peInsulationHanwa",
+    "name": "PE Insulation Hanwa",
+    "rate": 130.0
+  },
+  {
+    "id": "peInsulationDow",
+    "name": "PE Insulation Dow",
+    "rate": 122.0
+  },
+  {
+    "id": "peMb",
+    "name": "PE MB",
+    "rate": 250.0
+  },
+  {
+    "id": "peStarBorouge",
+    "name": "PE Star Borouge",
+    "rate": 108.0
+  },
+  {
+    "id": "pvcKlj",
+    "name": "PVC KLJ",
+    "rate": 89.0
+  },
+  {
+    "id": "ripCord",
+    "name": "Rip Cord",
+    "rate": 250.0
+  },
+  {
+    "id": "polyster",
+    "name": "Polyster",
+    "rate": 150.0
+  },
+  {
+    "id": "almyler",
+    "name": "Almyler",
+    "rate": 450.0
+  },
+  {
+    "id": "drainWire",
+    "name": "Drain Wire",
+    "rate": 1200.0
+  },
+  {
+    "id": "ldpe",
+    "name": "LDPE",
+    "rate": 224.0
+  },
+  {
+    "id": "foaming",
+    "name": "Foaming",
+    "rate": 207.0
+  },
+  {
+    "id": "atcBraiding",
+    "name": "ATC Braiding",
+    "rate": 1200.0
+  },
+  {
+    "id": "alloyBraiding",
+    "name": "Alloy Braiding",
+    "rate": 400.0
+  },
+  {
+    "id": "printing",
+    "name": "Printing",
+    "rate": 80.0
+  },
+  {
+    "id": "peSheathing",
+    "name": "PE Sheathing",
+    "rate": 115.0
+  },
+  {
+    "id": "lszhShakun",
+    "name": "LSZH Shakun",
+    "rate": 165.0
+  }
 ]
