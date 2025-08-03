@@ -8,6 +8,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -116,6 +117,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -224,6 +226,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -332,6 +335,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -440,6 +444,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -548,6 +553,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -656,6 +662,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -764,6 +771,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -872,6 +880,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "2.63",
@@ -890,7 +899,7 @@
         "unit": "kg"
       },
       "drainWire": {
-        "usage": "1.037",
+        "usage": "0",
         "unit": "kg"
       },
       "foaming": {
@@ -962,7 +971,7 @@
       "ripCord": "2.5"
     },
     "additonalCosting": {
-      "packing": "230.625"
+      "packing": "666.25"
     },
     "manufacturingCost": {
       "atcBraiding": "50",
@@ -980,6 +989,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -1088,6 +1098,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "1.96",
@@ -1196,6 +1207,7 @@
       "multiplier": "0.305",
       "unit": "m"
     },
+    "manufacturingMultiplier": "1",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "1.96",
@@ -1301,9 +1313,10 @@
     "margin": "46.5",
     "packing": "305 MTR. COIL",
     "packingSize": {
-      "multiplier": "0.305",
+      "multiplier": "0.3172",
       "unit": "m"
     },
+    "manufacturingMultiplier": "2.4",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -1409,9 +1422,10 @@
     "margin": "46.5",
     "packing": "305 MTR. COIL",
     "packingSize": {
-      "multiplier": "0.305",
+      "multiplier": "0.3172",
       "unit": "m"
     },
+    "manufacturingMultiplier": "2.4",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "3.46",
@@ -1517,9 +1531,10 @@
     "margin": "46.5",
     "packing": "305 MTR. COIL",
     "packingSize": {
-      "multiplier": "0.305",
+      "multiplier": "0.3172",
       "unit": "m"
     },
+    "manufacturingMultiplier": "2.4",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "0",
@@ -1625,9 +1640,10 @@
     "margin": "46.5",
     "packing": "305 MTR. COIL",
     "packingSize": {
-      "multiplier": "0.305",
+      "multiplier": "0.3172",
       "unit": "m"
     },
+    "manufacturingMultiplier": "2.4",
     "rawMaterials": {
       "alloyBraiding": {
         "usage": "3.46",

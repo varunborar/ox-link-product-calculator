@@ -52,13 +52,13 @@ function calculateProductRateV2(product, rawMaterialRates, variables = {}) {
     }
   }
   // 4. Calculate total cost
-  let manufacturingMultipler = product.manufacturingMultipler ? parseFloat(product.manufacturingMultipler) : 1;
-  let totalCost = materialCost + additionalCost + (manufacturingCost * manufacturingMultipler);
+  let manufacturingMultiplier = product.manufacturingMultiplier ? parseFloat(product.manufacturingMultiplier) : 1;
+  let totalCost = materialCost + additionalCost + (manufacturingCost * manufacturingMultiplier);
   let multiplier = product.packingSize && product.packingSize.multiplier ? parseFloat(product.packingSize.multiplier) : 1;
   let packageCost = totalCost * multiplier;
   let marginPercent = product.margin ? parseFloat(product.margin) : 0;
   let finalCost = packageCost / (1 - (marginPercent / 100));
-  // console.log(`productName: ${product.description} materialCost: ${materialCost} additionalCost: ${additionalCost} manufacturingCost: ${manufacturingCost} totalCost: ${totalCost} packageCost: ${packageCost} marginPercent: ${marginPercent} finalCost: ${finalCost}`);
+  console.log(`productName: ${product.description} materialCost: ${materialCost} additionalCost: ${additionalCost} manufacturingMultiplier: ${manufacturingMultiplier} manufacturingCost: ${manufacturingCost*manufacturingMultiplier} totalCost: ${totalCost} packageCost: ${packageCost} marginPercent: ${marginPercent} finalCost: ${finalCost}`);
   return Math.round(finalCost);
 }
 
