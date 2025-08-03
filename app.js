@@ -52,7 +52,8 @@ function calculateProductRateV2(product, rawMaterialRates, variables = {}) {
     }
   }
   // 4. Calculate total cost
-  let totalCost = materialCost + additionalCost + manufacturingCost;
+  let manufacturingMultipler = product.manufacturingMultipler ? parseFloat(product.manufacturingMultipler) : 1;
+  let totalCost = materialCost + additionalCost + (manufacturingCost * manufacturingMultipler);
   let multiplier = product.packingSize && product.packingSize.multiplier ? parseFloat(product.packingSize.multiplier) : 1;
   let packageCost = totalCost * multiplier;
   let marginPercent = product.margin ? parseFloat(product.margin) : 0;
