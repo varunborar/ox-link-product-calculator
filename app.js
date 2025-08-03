@@ -58,7 +58,7 @@ function calculateProductRateV2(product, rawMaterialRates, variables = {}) {
   let packageCost = totalCost * multiplier;
   let marginPercent = product.margin ? parseFloat(product.margin) : 0;
   let finalCost = packageCost / (1 - (marginPercent / 100));
-  console.log(`productName: ${product.description} materialCost: ${materialCost} additionalCost: ${additionalCost} manufacturingMultiplier: ${manufacturingMultiplier} manufacturingCost: ${manufacturingCost*manufacturingMultiplier} totalCost: ${totalCost} packageCost: ${packageCost} marginPercent: ${marginPercent} finalCost: ${finalCost}`);
+  // console.log(`productName: ${product.description} materialCost: ${materialCost} additionalCost: ${additionalCost} manufacturingMultiplier: ${manufacturingMultiplier} manufacturingCost: ${manufacturingCost*manufacturingMultiplier} totalCost: ${totalCost} packageCost: ${packageCost} marginPercent: ${marginPercent} finalCost: ${finalCost}`);
   return Math.round(finalCost);
 }
 
