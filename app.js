@@ -64,15 +64,23 @@ function calculateProductRateV2(product, rawMaterialRates, variables = {}) {
 
 let rawMaterialRatesCache = null;
 
-async function renderTable(copperRate) {
+async function renderProducts(copperRate) {
   // Fetch and cache raw material rates
   if (!rawMaterialRatesCache) {
     rawMaterialRatesCache = await fetch('RawMaterialRates.json').then(res => res.json());
   }
+  
+  // Render table view (desktop/tablet)
   const tbody = document.querySelector('#products_table tbody');
   tbody.innerHTML = '';
+  
+  // Render card view (mobile)
+  const cardsContainer = document.querySelector('#products_cards');
+  cardsContainer.innerHTML = '';
+  
   // Prepare variables object with copper override
   const variables = { copper: copperRate };
+  
   products.forEach((product, idx) => {
     let price = '';
     if (product.rawMaterials) {
@@ -81,6 +89,8 @@ async function renderTable(copperRate) {
       // fallback for legacy products
       price = calculateProductRate(copperRate, product.net_rate, product.ratio);
     }
+    
+    // Create table row
     const row = document.createElement('tr');
     row.innerHTML = `
       <td>${idx + 1}</td>
@@ -89,6 +99,28 @@ async function renderTable(copperRate) {
       <td>${price ? '₹' + Number(price).toFixed(2) : '-'}</td>
     `;
     tbody.appendChild(row);
+    
+    // Create card
+    const card = document.createElement('div');
+    card.className = 'col s12 m6 l4';
+    card.innerHTML = `
+      <div class="product-card">
+        <div class="card-header">
+          <h6>${idx + 1}. ${product.description}</h6>
+        </div>
+        <div class="card-content">
+          <div class="product-info">
+            <span class="label">Packing</span>
+            <span class="value">${product.packing}</span>
+          </div>
+          <div class="product-info">
+            <span class="label">Price</span>
+            <span class="value price">${price ? '₹' + Number(price).toFixed(2) : '-'}</span>
+          </div>
+        </div>
+      </div>
+    `;
+    cardsContainer.appendChild(card);
   });
 }
 
@@ -117,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Materialize label fix
         if (window.M && M.updateTextFields) M.updateTextFields();
       }
-      renderTable(copperInput.value);
+      renderProducts(copperInput.value);
 
       // Prevent form submission and update query param on Enter
       if (copperInput.form) {
@@ -129,11 +161,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Enter') {
           e.preventDefault();
           setQueryParam('rate', this.value);
-          renderTable(this.value);
+          renderProducts(this.value);
         }
       });
       copperInput.addEventListener('input', function() {
-        renderTable(this.value);
+        renderProducts(this.value);
       });
     });
 });

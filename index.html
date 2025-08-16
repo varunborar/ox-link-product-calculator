@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OXLINK Copper Rate Calculator</title>
+  <title>OX-LINK | Product Catalogue</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="./public/OXLINK Logo.png">
   <!-- Materialize CSS CDN -->
@@ -14,7 +14,7 @@
   <div class="container">
     <div class="center-align">
       <img src="./public/OXLINK Logo.png" alt="OXLINK Logo" class="logo responsive-img" style="max-width: 250px; margin-top: 10px;"/>
-      <h4>Copper Rate Product Calculator</h4>
+      <h4>Ox-Link Product Catalogue</h4>
     </div>
     <div class="row">
       <form class="col s12">
@@ -24,7 +24,9 @@
         </div>
       </form>
     </div>
-    <div class="row">
+    
+    <!-- Desktop/Tablet Table View -->
+    <div class="row hide-on-small-only">
       <div class="col s12">
         <table class="highlight responsive-table" id="products_table">
           <thead>
@@ -41,7 +43,34 @@
         </table>
       </div>
     </div>
+    
+    <!-- Mobile Card View -->
+    <div class="row hide-on-med-and-up" id="products_cards">
+      <!-- Product cards will be inserted here by JS -->
+    </div>
   </div>
+  
+  <!-- Footer -->
+  <footer class="page-footer" style="margin-top: 50px;">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <div class="footer-content">
+            <p class="disclaimer" style="color: #666; margin-bottom: 20px; font-style: italic;">
+              <strong>Note:</strong> The prices shown are only estimates. Please contact us for accurate pricing and detailed quotations.
+            </p>
+            <a href="https://ox-link.in/" target="_blank" class="btn waves-effect waves-light" style="background-color: #26a69a; margin-bottom: 20px;">
+              Visit Our Website
+            </a>
+            <p class="copyright" style="color: #999; font-size: 0.9rem;">
+              © 2024 All Rights Reserved - Ox-Link Electronics Private Limited
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>

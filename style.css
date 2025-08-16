@@ -14,6 +14,92 @@
   margin-top: 30px;
 }
 
+/* Product Cards Styles */
+.product-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.product-card .card-header {
+  background: linear-gradient(135deg, #26a69a 0%, #00897b 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-card .card-header h6 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.product-card .card-content {
+  padding: 20px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.product-info:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.product-info .label {
+  font-weight: 600;
+  color: #666;
+  min-width: 80px;
+}
+
+.product-info .value {
+  color: #333;
+  text-align: right;
+  flex: 1;
+}
+
+.product-info .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #26a69a;
+}
+
+/* Responsive breakpoints */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .product-card {
+    margin-bottom: 15px;
+  }
+  
+  .product-card .card-header h6 {
+    font-size: 1rem;
+  }
+  
+  .product-card .card-content {
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .product-card {
+    margin-bottom: 18px;
+  }
+}
+
 #save_pdf img {
   display: block;
   margin: auto;
@@ -26,4 +112,60 @@
 
 #save_pdf {
   margin-bottom: 15px;
+}
+
+/* Footer Styles */
+.page-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  padding: 30px 0;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.disclaimer {
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.btn {
+  text-transform: none;
+  font-weight: 500;
+  padding: 0 24px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 22px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transform: translateY(-1px);
+}
+
+.copyright {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Responsive footer adjustments */
+@media only screen and (max-width: 600px) {
+  .page-footer {
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+  
+  .disclaimer {
+    padding: 0 15px;
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
 }
